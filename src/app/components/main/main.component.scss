@@ -1,0 +1,11 @@
+// globals vars
+@import '../../sass/globalVars';
+
+header, footer {
+  background: red;
+  color: white;
+}
+
+header h1, footer h3 {
+  margin: 1rem;
+}

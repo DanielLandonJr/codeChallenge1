@@ -1,0 +1,118 @@
+#sec2-container {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: minmax(200px, 640px);
+  grid-template-rows: minmax(25px, 1fr);
+  grid-gap: 0.25rem;
+  justify-content: center;
+}
+
+#sec2-header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 0.25rem;
+  border-bottom: 2px solid darkgray;
+}
+
+#sec2-header h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#sec2-header button {
+  align-self: center;
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 0.4rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: .25rem;
+  font-size: .75rem;
+}
+
+#sec2-grams {
+  margin: 0.6rem 0rem 0.6rem 0rem;
+  justify-self: end;
+}
+
+#sec2-totals p {
+  margin: 0.25rem 0rem 0.25rem 0rem;
+}
+
+#sec2-totals {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 0.25rem;
+}
+
+#sec2-totals span {
+  align-self: center;
+  justify-self: end;
+}
+
+#sec2-breakdown {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 0.25rem;
+  border-top: 2px solid darkgray;
+}
+
+#sec2-breakdown #carbs, 
+#sec2-breakdown #protein,
+#sec2-breakdown #fat {
+  display: grid;
+  grid-template-rows: minmax(20px, ifr);
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  border-bottom: 2px solid darkgray;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#sec2-breakdown #carbs input, 
+#sec2-breakdown #protein input,
+#sec2-breakdown #fat input {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.sec2-perDay {
+  justify-self: center;
+}
+
+.sec2-total {
+  background: blue;
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+#sec2-totalPercent {
+  background: red;
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.slider {
+  border-radius: 5px;
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 10px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  transition: opacity .2s;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: blue;
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%;
+}

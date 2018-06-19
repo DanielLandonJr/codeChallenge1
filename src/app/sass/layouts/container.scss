@@ -1,0 +1,10 @@
+// grid layout for container
+
+#container {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: minmax(200px, 640px);
+  grid-template-rows: minmax(25px, 1fr);
+  grid-gap: 0.25rem;
+  justify-content: center;
+}

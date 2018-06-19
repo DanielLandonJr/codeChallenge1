@@ -1,0 +1,18 @@
+<div id="sec1-container">
+  <div id="sec1-header">
+    <h2>Step 1 - Enter Daily Calories</h2>
+
+    <!-- <button (click)='shareYourMacros()'>Share Your Macros</button> -->
+    <button (click)='shareYourMacros = !shareYourMacros'>Share Your Macros</button>
+    
+    <span class="dropdown-menu" *ngIf='!shareYourMacros'>
+      <a class="dropdown-item" href="#" id="share-fb">Share via Facebook</a>
+      <a class="dropdown-item" href="#" id="share-url">Share via URL</a>
+    </span>
+  </div>
+  
+  <div id="sec1-calories">
+    <input type="number" placeholder="Enter Daily Calories">
+    <p>If you dont know your daily calorie needs, <a href="#!" (click)='calculateDailyCalories()'>calculate them now by clicking here.</a></p>
+  </div>
+</div>

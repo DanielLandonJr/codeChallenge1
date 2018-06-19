@@ -1,0 +1,51 @@
+<div id="sec2-container">
+  <div id="sec2-header">
+    <h2>Step 2 - Adjust Ratios</h2>
+
+    <!-- <button (click)='ratioPresets()'>Ratio Presets</button> -->
+    <button (click)='ratioPresets = !ratioPresets'>Ratio Presets</button>
+    <span class="dropdown-menu" *ngIf='!ratioPresets'>
+      <span class="dropdown-header">Carbs/Protein/Fat</span>
+      <a class="dropdown-item" href="#" onclick="setPercents(event,10,15,75);">10/15/75 (Keto)</a>
+      <a class="dropdown-item" href="#" onclick="setPercents(event,60,25,15);">60/25/15 (High Carb)</a>
+      <a class="dropdown-item" href="#" onclick="setPercents(event,50,30,20);">50/30/20 (Moderate)</a>
+      <a class="dropdown-item" href="#" onclick="setPercents(event,40,30,30);">40/30/30 (Zone Diet)</a>
+      <a class="dropdown-item" href="#" onclick="setPercents(event,25,45,30);">25/45/30 (Low Carb)</a>
+    </span>
+  </div>
+
+  <div id="sec2-grams">
+    <a href="">Grams Per Day</a>
+  </div>
+  
+  <div id="sec2-breakdown">
+    <div id="carbs">
+      <span>Carbs</span>
+      <span>Percentage: <span class="sec2-total">{{ carbSliderValue }}%</span></span>
+      <span class="sec2-perDay">-</span>
+      <input type="range" min="0" max="100" value='0' class='slider' #cSlider (input)='carbSlider(cSlider.value)'>
+    </div>
+    <div id="protein">
+      <span>Protein</span>
+      <span>Percentage: <span class="sec2-total">{{ proteinSliderValue }}%</span></span>
+      <span class="sec2-perDay">-</span>
+      <input type="range" min="0" max="100" value='0' class='slider' #pSlider (input)='proteinSlider(pSlider.value)'>
+    </div>
+    <div id="fat">
+      <span>Fat</span>
+      <span>Percentage: <span class="sec2-total">{{ fatSliderValue }}%</span></span>
+      <span class="sec2-perDay">-</span>
+      <input type="range" min="0" max="100" class='slider' value='0' #fSlider (input)='fatSlider(fSlider.value)'>
+    </div>
+  </div>
+  
+  <div id="sec2-totals">
+    <p>Total Percentage <span id='sec2-totalPercent'>{{ totalValue }}%</span></p>
+  
+    <span>
+      <input type="checkbox" name="" id="">
+      <span> Show Grams Per Meal</span>
+    </span>
+  </div>
+
+</div>

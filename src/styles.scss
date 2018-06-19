@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './src/app/sass/collector.scss';
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}

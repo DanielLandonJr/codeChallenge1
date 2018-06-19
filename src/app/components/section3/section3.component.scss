@@ -1,0 +1,33 @@
+#sec3-container {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: minmax(200px, 640px);
+  grid-template-rows: minmax(25px, 1fr);
+  grid-gap: 0.25rem;
+  justify-content: center;
+}
+
+#sec3-header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 0.25rem;
+  border-bottom: 2px solid darkgray;
+}
+
+#sec3-header h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#sec3-header button {
+  align-self: center;
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 0.4rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: .25rem;
+  font-size: .75rem;
+}

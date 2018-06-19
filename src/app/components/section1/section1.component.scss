@@ -1,0 +1,48 @@
+#sec1-container {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: minmax(200px, 640px);
+  grid-template-rows: minmax(25px, 1fr);
+  grid-gap: 0.25rem;
+  justify-content: center;
+}
+
+#sec1-header, {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 0.25rem;
+  border-bottom: 2px solid darkgray;
+}
+
+#sec1-header h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#sec1-header button {
+  align-self: center;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 0.4rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: .25rem;
+  font-size: .75rem;
+}
+
+#sec1-calories, {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.25rem;
+}
+
+#sec1-calories p {
+  margin: 0rem;
+  font-size: 0.75rem;
+}
+
+#sec1-calories input {
+  padding: 0.5rem;
+}
